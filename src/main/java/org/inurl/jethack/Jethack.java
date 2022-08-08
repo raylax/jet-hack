@@ -39,7 +39,7 @@ public class Jethack {
         }
         System.out.printf("%nFound %s app(s), please type [1-%d]%n", apps.size(), apps.size());
         int n = new Scanner(System.in).nextInt();
-        if (n < 0 || n >= apps.size()) {
+        if (n < 0 || n > apps.size()) {
             System.err.println("Type error [" + n + "]");
             System.exit(0);
         }
