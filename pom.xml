@@ -6,7 +6,7 @@
 
     <groupId>org.inurl</groupId>
     <artifactId>jet-hack</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
 
     <properties>
         <java.version>1.8</java.version>
@@ -33,14 +33,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.8</version>
-                <configuration>
-                    <mainClass>org.inurl.jethack.Jethack</mainClass>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
@@ -64,10 +56,17 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <phase>package</phase>
+                        <id>jar-with-dependencies</id>
+                        <phase>prepare-package</phase>
                         <goals>
                             <goal>single</goal>
                         </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>assembly.xml</descriptor>
+                            </descriptors>
+                            <finalName>jet-hack</finalName>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
