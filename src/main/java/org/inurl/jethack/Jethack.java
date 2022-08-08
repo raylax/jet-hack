@@ -20,7 +20,7 @@ public class Jethack {
     private static final String CONFIG_MARK = "### JET-HACK ###";
 
     static {
-//        SELF_PATH = getJarFile().getPath();
+        SELF_PATH = getJarFile().getPath();
     }
 
     public static void main(String[] args) throws Exception {
