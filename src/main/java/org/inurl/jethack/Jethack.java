@@ -14,7 +14,7 @@ import java.util.Scanner;
 import java.util.jar.JarFile;
 
 public class Jethack {
-    public static final String VERSION = "1.0-preview";
+    public static final String VERSION = "1.2";
     private static final String FLAG_FILE = "/where_is_jar.flag";
     public static String SELF_PATH;
     private static final String CONFIG_MARK = "### JET-HACK ###";
