@@ -1,8 +1,7 @@
 # jet-hack
 
-根据`ja-netfilter`源代码简化
-> 仅测试了**2020.2-2023.1**版本
-> 
+根据`ja-netfilter`源代码简化，如有问题请提issue或给我发送邮件
+
 > 请将`jar`文件放在不会删除的路径，否则删除后将无法启动IDE
 
 `Mac OS`可以直接`java -jar jet-hack-deps.jar`根据提示自动配置
