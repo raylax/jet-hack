@@ -17,6 +17,7 @@ public class Checker {
 
     private static final String[] DNS_DENY_LIST = {
             "jetbrains.com",
+            "plugin.obroom.com",
     };
 
     private static final String[] URL_DENY_LIST = {
